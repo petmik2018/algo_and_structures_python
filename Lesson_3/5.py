@@ -1,10 +1,10 @@
 #5.	В массиве найти максимальный отрицательный элемент.
 # Вывести на экран его значение и позицию (индекс) в массиве.
-from random import randint
-source = []
 
-for i in range(0, 30):
-    source.append(randint(-20, 20))
+from random import randint
+
+source = []
+[source.append(randint(-20, 20)) for i in range(0, 30)]
 
 max = source[0]
 ind_max = 0
