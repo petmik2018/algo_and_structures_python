@@ -4,10 +4,9 @@
  так и различаться.
 """
 from random import randint
-source = []
 
-for i in range(0, 10):
-    source.append(randint(1, 20))
+source = []
+[source.append(randint(1, 20)) for i in range(0, 10)]
 
 if source[1] > source[0]:
     min_1 = source[0]
