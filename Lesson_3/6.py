@@ -5,10 +5,10 @@
 """
 
 from random import randint
-source = []
 
-for i in range(0, 30):
-    source.append(randint(1, 20))
+source = []
+[source.append(randint(1, 20)) for i in range(0, 30)]
+
 
 max = source[0]
 min = source[0]
