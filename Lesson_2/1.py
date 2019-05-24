@@ -9,3 +9,14 @@
 Также сообщать пользователю о невозможности деления на ноль,
 если он ввел 0 в качестве делителя.
 """
+
+def calculate(num):
+    k = 0
+    for i in range(2, 100):
+        if i % num == 0:
+            k += 1
+    print(f'{k} чисел, кратных {num}')
+
+denominators = range(2, 10)
+print('В указанном диапазоне:')
+[calculate(j) for j in denominators]
